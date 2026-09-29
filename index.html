@@ -29,27 +29,42 @@
 <body>
 
 <h1>Gizlilik Politikası</h1>
-<p class="meta">Oops, Wrong Timeline &nbsp;•&nbsp; Paket adı: <code>com.SFBCompany.BOOM</code> &nbsp;•&nbsp; Son güncelleme: 13 Ağustos 2026</p>
+<p class="meta">Oops, Wrong Timeline &nbsp;•&nbsp; Paket adı: <code>com.SFBCompany.BOOM</code> &nbsp;•&nbsp; Son güncelleme: 29 Eylül 2026</p>
 
 <p>Bu gizlilik politikası, "Oops, Wrong Timeline" ("Oyun", "biz") mobil oyununun kullanıcılardan ("siz") hangi verileri topladığını, bu verilerin nasıl kullanıldığını ve hangi üçüncü taraf hizmetlerle paylaşıldığını açıklar. Oyunu indirip oynayarak bu politikayı kabul etmiş olursunuz.</p>
 
 <h2>1. Geliştirici Kimliği</h2>
-<p>Bu oyun bağımsız bir geliştirici (SFBCompany) tarafından geliştirilmiştir. Oyun içinde sizden doğrudan isim, e-posta, telefon numarası gibi kişisel bilgiler istenmez ve hesap oluşturma zorunluluğu yoktur.</p>
+<p>Bu oyun bağımsız bir geliştirici (SFBCompany) tarafından geliştirilmiştir. Oyun içinde sizden isim, e-posta, telefon numarası gibi kişisel bilgiler istenmez ve hesap oluşturma zorunluluğu yoktur. Dünya sıralaması için cihazınıza otomatik olarak anonim bir kimlik atanır; bu kimlik sizi kişisel olarak tanımlamaz.</p>
 
 <h2>2. Topladığımız Veriler ve Kaynakları</h2>
-<p>Oyunun kendisi kişisel veri toplamaz. Ancak oyun, işlevselliği için aşağıdaki üçüncü taraf hizmetleri (SDK'lar) kullanır ve bu hizmetler kendi politikaları doğrultusunda bazı verileri otomatik olarak toplayabilir:</p>
+<p>Oyun, işlevselliği için aşağıdaki üçüncü taraf hizmetleri (SDK'lar) kullanır. Bu hizmetler aşağıda belirtilen verileri toplar ve işler:</p>
 
 <table>
-  <tr><th>Hizmet</th><th>Amacı</th><th>Toplayabileceği veri türleri</th></tr>
+  <tr><th>Hizmet</th><th>Amacı</th><th>Toplanan veri türleri</th></tr>
   <tr>
     <td><strong>Google AdMob</strong><br>(Google Mobile Ads SDK)</td>
     <td>Oyun içi ödüllü ve geçiş reklamlarının gösterilmesi</td>
-    <td>Reklam kimliği (Advertising ID), yaklaşık konum, cihaz bilgileri, IP adresi, uygulama etkileşim verileri, reklam gösterim/tıklama verileri</td>
+    <td>Reklam kimliği (Advertising ID), IP adresinden türetilen yaklaşık konum, cihaz bilgileri, uygulama etkileşim verileri, reklam gösterim/tıklama verileri, tanılama ve kilitlenme verileri</td>
+  </tr>
+  <tr>
+    <td><strong>Firebase Authentication</strong><br>ve <strong>Firebase Realtime Database</strong> (Google)</td>
+    <td>Sonsuz Mod dünya sıralaması</td>
+    <td>Anonim kullanıcı kimliği, seçtiğiniz takma ad, en yüksek skorunuz (öldürme sayısı), oynadığınız kat ve skorun kaydedildiği zaman</td>
+  </tr>
+  <tr>
+    <td><strong>Firebase Analytics</strong> (Google)</td>
+    <td>Oyunun nasıl oynandığını anlamak ve performansı iyileştirmek</td>
+    <td>Uygulama örneği kimliği, cihaz modeli, işletim sistemi, IP adresinden türetilen ülke/bölge, oyun içi olaylar (ör. mod seçimi, koşu süresi ve sonucu, reklam sonucu), performans verileri (kare hızı, bellek kullanımı, grafik kalitesi)</td>
+  </tr>
+  <tr>
+    <td><strong>Firebase Remote Config</strong> (Google)</td>
+    <td>Oyunun güncel sürümünün kullanıldığını kontrol etmek</td>
+    <td>Uygulama sürümü, uygulama örneği kimliği</td>
   </tr>
   <tr>
     <td><strong>Google Play Games Services</strong></td>
-    <td>Çevrimiçi skor tablosu (leaderboard) ve isteğe bağlı oturum açma</td>
-    <td>Google hesap kimliği, oyuncu takma adı, skor verileri</td>
+    <td>Başarımlar ve isteğe bağlı Play Games oturumu</td>
+    <td>Google Play Games oyuncu kimliği ve profil adı, başarım ilerlemesi</td>
   </tr>
   <tr>
     <td><strong>Google Play services</strong></td>
@@ -60,40 +75,58 @@
 
 <p>Bu hizmetlerin veri toplama ve işleme uygulamaları hakkında ayrıntılı bilgi için kendi gizlilik politikalarına bakabilirsiniz:</p>
 <ul>
-  <li><a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Gizlilik Politikası</a> (AdMob ve Play Games Services dahil)</li>
+  <li><a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Gizlilik Politikası</a> (AdMob, Firebase ve Play Games Services dahil)</li>
   <li><a href="https://support.google.com/admob/answer/6128543" target="_blank" rel="noopener">AdMob Veri Toplama Uygulamaları</a></li>
+  <li><a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">Firebase Gizlilik ve Güvenlik</a></li>
 </ul>
 
 <h2>3. Reklamlar</h2>
-<p>Oyun, Google AdMob aracılığıyla ödüllü reklamlar (isteğe bağlı, oyun içi ödül karşılığı izlenir) gösterir. Bu reklamlar cihazınıza ve konumunuza göre kişiselleştirilmiş olabilir. Google'ın reklam kişiselleştirme ayarlarını cihazınızın sistem ayarlarından yönetebilirsiniz:</p>
+<p>Oyun, Google AdMob aracılığıyla iki tür reklam gösterir:</p>
 <ul>
-  <li>Android: <em>Ayarlar → Google → Reklamlar</em> menüsünden "Reklam Kişiselleştirmeyi Devre Dışı Bırak" seçeneğini kullanabilirsiniz.</li>
+  <li><strong>Ödüllü reklamlar:</strong> İsteğe bağlıdır; oyun içi bir ödül (dirilme, ek altın vb.) karşılığında sizin seçiminizle izlenir.</li>
+  <li><strong>Geçiş reklamları:</strong> Yalnızca oyunun doğal geçiş anlarında (bölüm sonu, bazı ölüm ve koşu sonu ekranlarından sonra) sınırlı sıklıkla gösterilir; oynanış sırasında gösterilmez.</li>
+</ul>
+<p>Bu reklamlar cihazınıza ve konumunuza göre kişiselleştirilmiş olabilir. Google'ın reklam kişiselleştirme ayarlarını cihazınızın sistem ayarlarından yönetebilirsiniz:</p>
+<ul>
+  <li>Android: <em>Ayarlar → Google → Reklamlar</em> menüsünden reklam kimliğinizi sıfırlayabilir veya silebilirsiniz.</li>
 </ul>
 
-<h2>4. Yerel Depolama (Cihazınızda Kalan Veriler)</h2>
-<p>Oyun ilerlemeniz (bölüm tamamlama durumu, altın, ayarlar, ses tercihleri gibi) yalnızca kendi cihazınızda yerel olarak (<code>PlayerPrefs</code>) saklanır. Bu veriler bizim sunucularımıza gönderilmez; oyunu sildiğinizde bu veriler de cihazınızdan silinir.</p>
+<h2>4. Dünya Sıralaması</h2>
+<p>Sonsuz Mod'daki en yüksek skorunuz ve seçtiğiniz takma ad, herkese açık dünya sıralamasında diğer oyunculara gösterilir ve Google Firebase sunucularında saklanır. Takma ad seçmezseniz size otomatik olarak "Oyuncu1234" biçiminde bir ad verilir. Takma adınızı oyun içindeki dünya sıralaması ekranından istediğiniz zaman değiştirebilirsiniz. Lütfen takma adınızda gerçek adınız gibi kişisel bilgiler kullanmayın.</p>
 
-<h2>5. Çocukların Gizliliği</h2>
+<h2>5. Yerel Depolama (Cihazınızda Kalan Veriler)</h2>
+<p>Oyun ilerlemeniz (bölüm tamamlama durumu, altın, açılan içerikler, ayarlar, ses tercihleri gibi) yalnızca kendi cihazınızda yerel olarak (<code>PlayerPrefs</code>) saklanır ve sunuculara gönderilmez. Bunun tek istisnası, 4. bölümde açıklanan dünya sıralaması verileridir. Oyunu sildiğinizde yerel veriler de cihazınızdan silinir.</p>
+
+<h2>6. Çocukların Gizliliği</h2>
 <p>Oyun genel kitleye yöneliktir ve bilerek 13 yaş altı çocuklardan kişisel veri toplamaz. AdMob entegrasyonumuz, Google'ın Aile Politikası Şartlarına uygun şekilde yapılandırılmıştır. 13 yaşın altında bir çocuğun bize kişisel veri sağladığını düşünüyorsanız, aşağıdaki iletişim adresinden bize ulaşın; ilgili veriyi derhal kaldıracağız.</p>
 
-<h2>6. Verilerin Paylaşılması</h2>
-<p>Kişisel verilerinizi, yukarıda belirtilen üçüncü taraf hizmet sağlayıcılar (Google) dışında hiçbir şirketle satmayız, kiralamayız veya pazarlama amacıyla paylaşmayız.</p>
+<h2>7. Verilerin Paylaşılması</h2>
+<p>Kişisel verilerinizi, yukarıda belirtilen hizmet sağlayıcılar (Google) dışında hiçbir şirketle satmayız, kiralamayız veya pazarlama amacıyla paylaşmayız. Dünya sıralamasındaki takma adınız ve skorunuz, sıralamanın doğası gereği diğer oyunculara görünür.</p>
 
-<h2>7. Veri Güvenliği</h2>
-<p>Üçüncü taraf hizmetler aracılığıyla işlenen veriler, ilgili sağlayıcıların (Google) endüstri standardı güvenlik önlemleriyle korunur. Kendi tarafımızda ayrıca bir sunucu veya veritabanı işletmediğimiz için, kişisel veri saklama sorumluluğumuz bu üçüncü taraf hizmetlerin kapsamıyla sınırlıdır.</p>
+<h2>8. Veri Güvenliği ve Saklama</h2>
+<p>Oyun ile sunucular arasındaki tüm veri aktarımı şifreli (HTTPS) bağlantı üzerinden yapılır. Dünya sıralaması verileri, bizim adımıza Google Firebase altyapısında saklanır; erişim kuralları, her oyuncunun yalnızca kendi kaydını değiştirebilmesine izin verecek şekilde yapılandırılmıştır.</p>
+<ul>
+  <li><strong>Dünya sıralaması verileri</strong> (takma ad, skor), siz silinmesini talep edene veya sıralama sıfırlanana kadar saklanır.</li>
+  <li><strong>Firebase Analytics verileri</strong> kişisel kimlik içermez ve Google'ın saklama ayarlarına göre en fazla 14 ay sonra otomatik olarak silinir.</li>
+  <li><strong>Reklam verileri</strong> Google AdMob'un kendi saklama politikalarına tabidir.</li>
+</ul>
 
-<h2>8. Haklarınız</h2>
-<p>Bulunduğunuz bölgeye bağlı olarak (GDPR, CCPA vb.) Google'ın topladığı verilere erişim, düzeltme veya silme talebinde bulunma hakkınız olabilir. Bu talepleri doğrudan <a href="https://myaccount.google.com/data-and-privacy" target="_blank" rel="noopener">Google Hesabım — Veri ve Gizlilik</a> sayfasından yönetebilirsiniz.</p>
+<h2 id="veri-silme">9. Veri Silme</h2>
+<p>Oyun hesap oluşturmaz. Dünya sıralamasındaki takma adınızın ve skorunuzun silinmesini istiyorsanız <a href="mailto:emircakmak55@gmail.com?subject=Veri%20silme%20talebi">emircakmak55@gmail.com</a> adresine "Veri silme talebi" konulu bir e-posta gönderin ve sıralamada görünen takma adınızı yazın. Talebiniz 30 gün içinde işlenir; takma adınız ve skorunuz sıralamadan kalıcı olarak silinir.</p>
+<p>Cihazınızdaki yerel verileri silmek için oyunu kaldırmanız yeterlidir.</p>
 
-<h2>9. Politika Değişiklikleri</h2>
+<h2>10. Haklarınız</h2>
+<p>Bulunduğunuz bölgeye bağlı olarak (GDPR, KVKK, CCPA vb.) verilerinize erişim, düzeltme veya silme talebinde bulunma hakkınız olabilir. Dünya sıralaması verileriniz için 9. bölümdeki adresten bize ulaşabilirsiniz. Google'ın topladığı diğer verileri <a href="https://myaccount.google.com/data-and-privacy" target="_blank" rel="noopener">Google Hesabım — Veri ve Gizlilik</a> sayfasından yönetebilirsiniz.</p>
+
+<h2>11. Politika Değişiklikleri</h2>
 <p>Bu gizlilik politikası zaman zaman güncellenebilir. Önemli değişiklikler bu sayfada yayınlanacak ve sayfanın üst kısmındaki "son güncelleme" tarihi buna göre değişecektir.</p>
 
-<h2>10. İletişim</h2>
+<h2>12. İletişim</h2>
 <div class="contact">
 <p>Bu gizlilik politikasıyla ilgili sorularınız için bize ulaşabilirsiniz:</p>
 <p><strong>Geliştirici:</strong> SFBCompany<br>
 <strong>Oyun:</strong> Oops, Wrong Timeline<br>
-<strong>E-posta:</strong> <em>[emircakmak55@gmail.com]</em></p>
+<strong>E-posta:</strong> <a href="mailto:emircakmak55@gmail.com">emircakmak55@gmail.com</a></p>
 </div>
 
 </body>
